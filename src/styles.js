@@ -30,7 +30,7 @@ export const ContainerItens = styled.div`
   align-items: center;
   padding-top: 40px;
   gap: 10px;  
-  height: 100vh;
+  height: 100%;
   width: 350px;
 
   ul {
@@ -83,6 +83,7 @@ export const Button = styled.button`
   border-radius: 20px;
   border-width: 0px;
   cursor: pointer;
+  margin-top: 20px;
 
   &:hover {
     opacity: 0.8;
