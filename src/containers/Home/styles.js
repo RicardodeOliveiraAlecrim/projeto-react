@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-import Back1 from "./assets/back1.jpg";
+import Back1 from "../../assets/back1.jpg";
 
 export const Container = styled.div`
-  height: 100%;
+  height: 100vh;
   background: url("${Back1}");
   background-size: cover;
   width: 100vw;
