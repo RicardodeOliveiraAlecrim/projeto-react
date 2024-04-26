@@ -6,6 +6,8 @@ import Arrow from "../../assets/arrow.png";
 
 import Logo from "../../assets/Logo.png";
 
+import { useHistory } from "react-router-dom";
+
 import {
   Container,  
   ContainerItens,
@@ -18,18 +20,25 @@ import {
 
 const Home = () => {
 
+  const history = useHistory();
+
   const [users, setUsers] = useState([]);
 
   const inputName = useRef();
 
   const inputAge = useRef();
 
+  
   async function addNewUser() {
-
+     
      const {data:addUser}= await axios.post("http://localhost:3001/users/", { name: inputName.current.value, age: inputAge.current.value })
+    
      console.log(addUser)
+    
      setUsers([...users, addUser]);
-      
+
+    history.push("/users");
+    
   }
 
 

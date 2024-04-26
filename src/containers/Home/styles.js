@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import Back1 from "../../assets/back1.jpg";
 
+
 export const Container = styled.div`
   height: 100vh;
   background: url("${Back1}");
@@ -24,6 +25,7 @@ export const ContainerItens = styled.div`
     rgba(0, 0, 0, 0.5) 85%,
     rgba(0, 0, 0, 0.15) 100%
   );
+   backdrop-filter: blur(05px);
   border-radius: 60px 60px 0px 0px;
   display: flex;
   flex-direction: column;
